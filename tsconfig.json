@@ -1,0 +1,43 @@
+{
+  "extends": "@tsconfig/svelte/tsconfig.json",
+  "compilerOptions": {
+    "allowJs": true,
+    "strictFunctionTypes": true,
+    "noImplicitAny": false,
+    "resolveJsonModule": true,
+    "target": "es6",
+    "module": "esnext",
+    "strict": false,
+    "importHelpers": true,
+    "moduleResolution": "node",
+    "experimentalDecorators": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "sourceMap": false,
+    "baseUrl": ".",
+    "types": ["node", "vite/client"],
+    "typeRoots": ["node_modules/@types"],
+    "paths": {
+      "@/*": ["./src/*", "./*", "src/*"]
+    },
+    "lib": ["esnext", "dom.iterable", "scripthost", "es2015", "es2016", "dom", "es2018.promise"]
+  },
+  "paths": {
+    "@/*": ["./src/*", "./*", "src/*"]
+  },
+  "include": ["./src", "**.svelte", "./src/**/*", "src/**/*.ts", "src/**/*.tsx", "src/**/*.svelte", "tests/**/*.ts", "tests/**/*.tsx", "src/locale/*"],
+  "exclude": ["node_modules"],
+  "trailing-comma": [
+    true,
+    {
+      "singleline": "never",
+      "multiline": {
+        "objects": "never",
+        "arrays": "always",
+        "functions": "never",
+        "typeLiterals": "ignore"
+      }
+    }
+  ],
+  "no-var-requires": false
+}
