@@ -1,6 +1,6 @@
 ## svelte-saas-kit
 
-Svelte SaaS template, TypeScript, Tailwind CSS, Modular persisted store, Meta-tags, i18n, Front pages, Vite
+Svelte SaaS template, TypeScript, Tailwind CSS, Modular persisted store, Meta-tags, i18n, Front/Auth/Admin/App pages, Vite
 
 ![Svelte Codebase](https://yahooder.sirv.com/saasfrontends/oss/svelte.png)
 
